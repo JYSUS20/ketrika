@@ -21,4 +21,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('/produits', [App\Http\Controllers\ProduitController::class, 'getAll']);
 Route::post('/produit', [App\Http\Controllers\ProduitController::class, 'insert']);
+Route::get('/Profile', [App\Http\Controllers\ProfilesController::class, 'getUser']);
 
