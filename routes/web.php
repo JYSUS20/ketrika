@@ -20,6 +20,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/client/{any}', [App\Http\Controllers\IndexController::class, 'index'])->where('any', '[\/\w\.-]*');
 Route::get('/', [App\Http\Controllers\WelcomeController::class, 'index'])->name('welcome');
 Route::get('/client/produits', [App\Http\Controllers\produitController::class, 'index'])->name('produit');
+Route::get('/client/Profile', [App\Http\Controllers\ProfileController::class, 'index'])->name('Profile');
 
 
 
