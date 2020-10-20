@@ -2044,6 +2044,37 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     this.getProfile();
@@ -40076,47 +40107,179 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "card card-profile-1 mb-4" }, [
+    _c("div", { staticClass: "card-body text-center" }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("h5", { staticClass: "m-0" }, [_vm._v(_vm._s(_vm.profil.name))]),
+      _vm._v(" "),
+      _c("p", { staticClass: "mt-0" }, [_vm._v(_vm._s(_vm.profil.email))]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae cumque."
+        )
+      ]),
+      _vm._v(" "),
+      _vm._m(1)
+    ]),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass: "modal fade",
+        attrs: {
+          id: "mande",
+          tabindex: "-1",
+          role: "dialog",
+          "aria-labelledby": "mande",
+          "aria-hidden": "true"
+        }
+      },
+      [
+        _c(
+          "div",
+          {
+            staticClass: "modal-dialog modal-dialog-centered",
+            attrs: { role: "document" }
+          },
+          [
+            _c("div", { staticClass: "modal-content" }, [
+              _vm._m(2),
+              _vm._v(" "),
+              _c("div", { staticClass: "modal-body" }, [
+                _c("div", { staticClass: "form-group" }, [
+                  _c("label", { attrs: { for: "nom" } }, [_vm._v("name")]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.profil.name,
+                        expression: "profil.name"
+                      }
+                    ],
+                    staticClass: "form-control",
+                    attrs: { type: "text", id: "nom", placeholder: "Name" },
+                    domProps: { value: _vm.profil.name },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.profil, "name", $event.target.value)
+                      }
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c("label", { attrs: { for: "coment" } }, [_vm._v("Email")]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.profil.email,
+                        expression: "profil.email"
+                      }
+                    ],
+                    staticClass: "form-control",
+                    attrs: {
+                      type: "text",
+                      id: "coment",
+                      placeholder: "Commande"
+                    },
+                    domProps: { value: _vm.profil.email },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.profil, "email", $event.target.value)
+                      }
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-primary",
+                    attrs: { type: "valide" },
+                    on: {
+                      click: function($event) {
+                        $event.preventDefault()
+                        return _vm.saveproduit($event)
+                      }
+                    }
+                  },
+                  [_vm._v("Enregistrer")]
+                )
+              ])
+            ])
+          ]
+        )
+      ]
+    )
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card card-profile-1 mb-4" }, [
-      _c("div", { staticClass: "card-body text-center" }, [
-        _c("div", { staticClass: "avatar box-shadow-2 mb-3" }, [
-          _c("img", {
-            attrs: { src: "dist-assets/images/faces/16.jpg", alt: "" }
-          })
-        ]),
+    return _c("div", { staticClass: "avatar box-shadow-2 mb-3" }, [
+      _c("img", { attrs: { src: "dist-assets/images/faces/16.jpg", alt: "" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "button",
+      {
+        staticClass: "btn btn-primary btn-icon m-1",
+        attrs: { type: "button" }
+      },
+      [
+        _c("i", { staticClass: "fas fa-hand-holding-usd" }),
         _vm._v(" "),
-        _c("h5", { staticClass: "m-0" }, [_vm._v("Jassica Hike")]),
-        _vm._v(" "),
-        _c("p", { staticClass: "mt-0" }, [_vm._v("UI/UX Designer")]),
-        _vm._v(" "),
-        _c("p", [
-          _vm._v(
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae cumque."
-          )
-        ]),
-        _vm._v(" "),
-        _c("button", { staticClass: "btn btn-primary btn-rounded" }, [
-          _vm._v("Contact Jassica")
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "card-socials-simple mt-4" }, [
-          _c("a", { attrs: { href: "" } }, [
-            _c("i", { staticClass: "i-Linkedin-2" })
-          ]),
-          _c("a", { attrs: { href: "" } }, [
-            _c("i", { staticClass: "i-Facebook-2" })
-          ]),
-          _c("a", { attrs: { href: "" } }, [
-            _c("i", { staticClass: "i-Twitter" })
-          ])
-        ])
-      ])
+        _c(
+          "span",
+          {
+            staticClass: "ul-btn__text",
+            attrs: { "data-toggle": "modal", "data-target": "#mande" }
+          },
+          [_vm._v("modifier")]
+        )
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "modal-header" }, [
+      _c("h5", { staticClass: "modal-title", attrs: { id: "mande" } }, [
+        _vm._v("Modal title")
+      ]),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "close",
+          attrs: {
+            type: "button",
+            "data-dismiss": "modal",
+            "aria-label": "Close"
+          }
+        },
+        [_c("span", { attrs: { "aria-hidden": "true" } }, [_vm._v("×")])]
+      )
     ])
   }
 ]
