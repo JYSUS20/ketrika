@@ -2039,6 +2039,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     this.getProfile();
@@ -40071,17 +40076,50 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "card card-profile-1 mb-4" }, [
-    _vm._v(
-      "\r\n    " +
-        _vm._s(_vm.profil.name) +
-        "\r\n\r\n    " +
-        _vm._s(_vm.profil.email) +
-        "\r\n"
-    )
-  ])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card card-profile-1 mb-4" }, [
+      _c("div", { staticClass: "card-body text-center" }, [
+        _c("div", { staticClass: "avatar box-shadow-2 mb-3" }, [
+          _c("img", {
+            attrs: { src: "dist-assets/images/faces/16.jpg", alt: "" }
+          })
+        ]),
+        _vm._v(" "),
+        _c("h5", { staticClass: "m-0" }, [_vm._v("Jassica Hike")]),
+        _vm._v(" "),
+        _c("p", { staticClass: "mt-0" }, [_vm._v("UI/UX Designer")]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae cumque."
+          )
+        ]),
+        _vm._v(" "),
+        _c("button", { staticClass: "btn btn-primary btn-rounded" }, [
+          _vm._v("Contact Jassica")
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "card-socials-simple mt-4" }, [
+          _c("a", { attrs: { href: "" } }, [
+            _c("i", { staticClass: "i-Linkedin-2" })
+          ]),
+          _c("a", { attrs: { href: "" } }, [
+            _c("i", { staticClass: "i-Facebook-2" })
+          ]),
+          _c("a", { attrs: { href: "" } }, [
+            _c("i", { staticClass: "i-Twitter" })
+          ])
+        ])
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -55866,15 +55904,14 @@ __webpack_require__.r(__webpack_exports__);
 /*!*********************************************!*\
   !*** ./resources/js/components/Profile.vue ***!
   \*********************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Profile_vue_vue_type_template_id_3bd692e4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Profile.vue?vue&type=template&id=3bd692e4& */ "./resources/js/components/Profile.vue?vue&type=template&id=3bd692e4&");
 /* harmony import */ var _Profile_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Profile.vue?vue&type=script&lang=js& */ "./resources/js/components/Profile.vue?vue&type=script&lang=js&");
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Profile_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Profile_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -55904,7 +55941,7 @@ component.options.__file = "resources/js/components/Profile.vue"
 /*!**********************************************************************!*\
   !*** ./resources/js/components/Profile.vue?vue&type=script&lang=js& ***!
   \**********************************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
